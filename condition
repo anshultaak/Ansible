@@ -1,0 +1,16 @@
+ANSIBLE CONDITION
+vars:
+  age: 18
+tasks:
+  name: run this if value equal to 18
+  command: touch /tmp/txt
+  when: age == 18
+# when is condition 
+
+AND
+when : age == 18 and age > 18
+# example and mean if both condition true then run
+
+OR
+when : age == 18 and age < 18 
+# or mean if atleast condition true then run
