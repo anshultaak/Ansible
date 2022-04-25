@@ -1,0 +1,6 @@
+ANSIBLE VARIABLE
+vars:
+  name: anshul
+# how to define varible
+{{ name }}
+#output variable
