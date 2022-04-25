@@ -1,0 +1,11 @@
+LOOPS
+tasks:
+  -
+    name: using loop
+    apt: name="{{ item }}" state=present
+     with_items:
+       - vsftpd
+       - tree
+# using loop 
+# state=presrent meaning is on subserver if the service are not present then install else present then does not install
+# state=absent meanih is on subserver delete this service
