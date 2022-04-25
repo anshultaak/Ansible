@@ -1,0 +1,10 @@
+LIST
+vars:
+  pkg:
+   - vsftpd
+   - tree
+# creating list with help variable
+with_items: "{{ pkg }}"
+# adding list in loops
+{{ item }} 
+# output loops
